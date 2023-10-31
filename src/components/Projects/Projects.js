@@ -6,8 +6,10 @@ import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.png";
 import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
+import faceRecognition from "../../Assets/Projects/face-recognition.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import tideGuards from "../../Assets/Projects/tidesGuard.png";
 
 function Projects() {
   return (
@@ -23,23 +25,22 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={faceRecognition}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="UCF Here Face Rekoginition"
+              description = "UCF Here 2.0 is an innovative mobile application designed to simplify attendance tracking for teachers. By leveraging AWS Face Recognition technology, it ensures secure and accurate student check-ins through QR code scanning, providing a seamless and efficient way to manage classroom attendance."
+              ghLink="https://github.com/vphatfla/ucf-here-demo-terraform"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={tideGuards}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Tides Guard"
+              description= "Tides Guard is a comprehensive project consisting of a web application for coastal community resilience and an Android mobile app built with React Native. The web app harnesses real-time data and predictive analytics powered by Express.js, empowering stakeholders to make informed decisions in the face of rising sea levels and tidal flooding, while the React Native mobile app ensures accessibility and ease of use on Android devices."
+              ghLink="https://github.com/vphatfla/hackabull23"
+              demoLink="https://devpost.com/software/tides-guard"
             />
           </Col>
 
