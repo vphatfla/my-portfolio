@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, setActiveTab } from 'react';
 
 const Experience = () => {
-  const [activeTab, setActiveTab] = useState(0);
-
   const experienceData = [
     {
       company: 'Royal Supply',
@@ -33,7 +31,7 @@ const Experience = () => {
 },
     // Add more experience data as needed
   ];
-
+  const [activeTab, setActiveTab] = useState(experienceData.length - 1);
   return (
     <div className="experience">
       <h1 id='h1-exp'>Experience</h1>
