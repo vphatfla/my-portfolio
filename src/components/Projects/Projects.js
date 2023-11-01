@@ -2,12 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import faceRecognition from "../../Assets/Projects/face-recognition.png";
+import tideGuards from "../../Assets/Projects/tidesGuard.png";
+import ttt from "../../Assets/Projects/ttt.png";
 
 function Projects() {
   return (
@@ -17,44 +14,43 @@ function Projects() {
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
         </h1>
-        <p style={{ color: "white" }}>
+        <p style={{ color: "black" }}>
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={faceRecognition}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="UCF Here Face Rekoginition"
+              description = "UCF Here 2.0 is an innovative mobile application designed to simplify attendance tracking for teachers. By leveraging AWS Face Recognition technology, it ensures secure and accurate student check-ins through QR code scanning, providing a seamless and efficient way to manage classroom attendance."
+              ghLink="https://github.com/vphatfla/ucf-here-demo-terraform"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={tideGuards}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Tides Guard"
+              description= "Tides Guard is a comprehensive project consisting of a web application for coastal community resilience and an Android mobile app built with React Native. The web app harnesses real-time data and predictive analytics powered by Express.js, empowering stakeholders to make informed decisions in the face of rising sea levels and tidal flooding, while the React Native mobile app ensures accessibility and ease of use on Android devices."
+              ghLink="https://github.com/vphatfla/hackabull23"
+              demoLink="https://devpost.com/software/tides-guard"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={ttt}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="AI Tic Tac Toe"
+              description= "A Tic Tac Toe game implementing the Minimax AI algorithm ensures a 100% tie or win rate for the AI by making optimal moves in every situation. Minimax is a decision-making algorithm that minimizes the opponent's potential score while maximizing the AI's potential score, guaranteeing that the AI never loses and, in the absence of mistakes, will either win or tie every game of Tic Tac Toe."
+              ghLink="https://github.com/vphatfla/tic-tac-toe"
+              demoLink="https://vphatfla.github.io/tic-tac-toe/"              
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
@@ -86,7 +82,7 @@ function Projects() {
               ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>

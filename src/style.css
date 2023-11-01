@@ -1,14 +1,22 @@
+html,body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#root {
+  min-height: 100%;
+}
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(7, 73, 113, 0.582),
-    rgba(204, 230, 255, 0.904)
+    RGB(136, 176, 75),
+    rgba(255, 255, 255, 0.9)
   );
 
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(3, 44, 70, 0.582),
-    rgba(175, 216, 255, 0.9)
+    RGB(136, 176, 75),
+    rgba(255, 255, 255, 0.9)
   );
 
   --imp-text-color: #00509b;
@@ -57,12 +65,12 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: #afafaf;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: rgba(0, 0, 0, 0.959);
   border-radius: 12px;
 }
 
@@ -85,7 +93,7 @@ button:focus {
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
   font-size: 1.2rem !important;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 .navbar-toggler {
@@ -254,16 +262,18 @@ button:focus {
 }
 
 .home-section {
+  height: 100%;
+  min-height: 100% !important;
   position: relative;
   z-index: -1;
   background-image: var(--image-gradient);
   background-position: top center;
   background-repeat: no-repeat;
-  padding-bottom: 30px !important;
-  padding-top: 30px !important;
+
 }
 
 .home-content {
+  min-height: 100% !important;
   padding: 9rem 0 2rem !important; 
   color: whitesmoke;
   text-align: center;
@@ -317,12 +327,14 @@ button:focus {
 }
 
 .home-about-section {
+  min-height: 100% !important;
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
 }
 
 .home-about-description {
+  min-height: 100% !important;
   color: black !important;
   padding-top: 100px !important;
   padding-bottom: 20px !important;
@@ -401,10 +413,11 @@ button:focus {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  position:fixed;
+  background-color: rgb(0, 0, 0);
   bottom: 0 !important;
-  padding-top: 10px !important;
-  padding-bottom: 8px !important ;
+  text-align: center;
+
 }
 .footer-copywright {
   text-align: center !important;
@@ -435,6 +448,9 @@ button:focus {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
   padding: 0 !important;
+  display: flex;
+  justify-content: center; /* Center-align the list items horizontally */
+  align-items: center; 
 }
 
 .blockquote-footer {
@@ -459,8 +475,8 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
-  color: white !important;
+  box-shadow: 0 4px 5px 3px rgba(0, 0, 0, 0.459) !important;
+  color: rgb(0, 0, 0) !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
@@ -469,7 +485,7 @@ button:focus {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 4px 4px 5px rgba(0, 0, 0, 0.561) !important;
 }
 
 .blog-card {
@@ -482,7 +498,7 @@ button:focus {
 
 .blog-card-view {
   background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
+  box-shadow: 0 3px 3px 2px rgba(0, 0, 0, 0.459) !important;
   color: white !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
@@ -500,7 +516,7 @@ button:focus {
 .blog-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
+  box-shadow: 0 3px 3px 5px rgba(0, 0, 0, 0.65) !important;
 }
 
 .card-img-top {
@@ -517,21 +533,21 @@ button:focus {
 
 .btn-primary {
   color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  background-color: #000000 !important;
+  border-color: #ffffff !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  background-color: #414141d7 !important;
+  border-color: #838383d7 !important;
 }
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
 }
 .project-heading {
-  color: white !important;
+  color: rgb(0, 0, 0) !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
@@ -747,9 +763,12 @@ button:focus {
     padding-bottom: 70px !important;
     padding-top: 70px !important;
     text-align: center;
-    min-height: 100%;
+    height: 100vh;
 }
 
+#h1-exp {
+  padding: 3%;
+}
 .subtitle {
   font-size: 12px;
   color: #777;
@@ -765,10 +784,11 @@ button:focus {
 
 .tab-buttons {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
   background-color: #f4f4f4;
   border: 1px solid #ddd;
   border-radius: 5px;
+  font-size: 18px;
 }
 
 button {
@@ -776,7 +796,7 @@ button {
   border: none;
   cursor: pointer;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 20px;
   color: #333;
   transition: background-color 0.3s, color 0.3s;
   border-right: 1px solid #ddd;
@@ -807,7 +827,7 @@ button.active {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #f9f9f9;
   min-width: 300px;
-  max-width: 500px;
+  max-width: 700px;
 }
 
 .tab-content p {
@@ -817,4 +837,44 @@ button.active {
 .tab-content strong {
   font-weight: bold;
   color: #007BFF;
+}
+
+
+/* full screen */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content {
+  flex:1;
+  height: 100vh;
+}
+
+.home-section{
+  height: 100vh;
+}
+#home {
+  min-height: 100%;
+}
+.home-section-out {
+  min-height: 100%;
+}
+.home-content {
+  height: 100%;
+}
+
+#gmailLink {
+  color: #ffffff; /* Change the link color to Gmail's blue color */
+  text-decoration: none; /* Remove the underline from the link */
+}
+
+#gmailLink:hover {
+  text-decoration: underline; /* Add underline when hovering over the link */
+}
+
+.footer-icons-item {
+  margin-right: 70px;
 }

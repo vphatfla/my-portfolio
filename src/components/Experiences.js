@@ -36,7 +36,7 @@ const Experience = () => {
 
   return (
     <div className="experience">
-      <h1>Experience</h1>
+      <h1 id='h1-exp'>Experience</h1>
       <div className="tabs">
         <div className="tab-buttons">
           {experienceData.map((tab, index) => (
@@ -52,6 +52,7 @@ const Experience = () => {
         </div>
         <div className="tab-content">
           <h2>{experienceData[activeTab].company}</h2>
+          <p>{experienceData[activeTab].dayRange}</p>
           <p><strong>{experienceData[activeTab].position}</strong> {experienceData[activeTab].timeFrame}</p>
           <div className="context">
             <ul>
